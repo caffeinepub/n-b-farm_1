@@ -1,0 +1,14 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T11:42:22.135Z",
+  "summary": "The diff shows PreOrderForm.tsx was modified to update the Desi Mango 10 kg box price to ₹350. The pricing table, total price calculation, and WhatsApp message builder all reflect ₹350 for Desi Mango 10 kg box. Desi Mango 5 kg box remains ₹200, Kesar Mango pricing is unchanged. All acceptance criteria for REQ-37 appear to be satisfied.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.95,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/PreOrderForm.tsx",
+    "project_state.json"
+  ]
+}

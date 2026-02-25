@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Update Desi Mango 10 kg box price to ₹350 in PreOrderForm",
+  "projectName": "N.B. Farm",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-37",
+      "text": "In PreOrderForm.tsx, update the Desi Mango 10 kg box variant price to ₹350 per box. Update the dynamic total price calculation so that when 'Desi Mango' is selected with '10 kg box' packaging, the price used is ₹350 per box × quantity. Update the pre-filled WhatsApp message to reflect ₹350 per box for Desi Mango 10 kg box orders. The Desi Mango 5 kg box (₹200 per box), Kesar Mango 5 kg box, and Kesar Mango 10 kg box pricing must remain unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change the desi mango - 10kg variant price to 350rs please"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When 'Desi Mango' and '10 kg box' are selected, the dynamic total price displays ₹350 × quantity.",
+        "The pre-filled WhatsApp message sent on form submission correctly states ₹350 per box for Desi Mango 10 kg box orders.",
+        "Desi Mango 5 kg box price remains ₹200 per box with no change.",
+        "Kesar Mango pricing (both 5 kg and 10 kg box) remains unchanged.",
+        "Total price calculation updates correctly in real time as quantity changes with this combination selected."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change Desi Mango 5 kg box pricing (₹200 per box).",
+    "Do not change Kesar Mango pricing for any box size.",
+    "Only PreOrderForm.tsx should be modified."
+  ],
+  "nonGoals": [
+    "Changing prices in ProductsSection.tsx.",
+    "Modifying any other section or component outside PreOrderForm.tsx.",
+    "Updating backend pre-order storage logic."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

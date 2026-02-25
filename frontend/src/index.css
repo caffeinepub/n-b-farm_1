@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Kalam:wght@300;400;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* N.B. Farm earthy palette */
+    --background: 0.97 0.018 85;
+    --foreground: 0.22 0.04 45;
+
+    --card: 0.95 0.022 80;
+    --card-foreground: 0.22 0.04 45;
+
+    --popover: 0.97 0.018 85;
+    --popover-foreground: 0.22 0.04 45;
+
+    /* Mud brown primary */
+    --primary: 0.38 0.07 42;
+    --primary-foreground: 0.97 0.018 85;
+
+    /* Turmeric yellow secondary */
+    --secondary: 0.78 0.12 75;
+    --secondary-foreground: 0.22 0.04 45;
+
+    /* Leaf green accent */
+    --accent: 0.48 0.1 145;
+    --accent-foreground: 0.97 0.018 85;
+
+    /* Terracotta destructive */
+    --destructive: 0.52 0.18 28;
+    --destructive-foreground: 0.97 0.018 85;
+
+    --muted: 0.92 0.025 80;
+    --muted-foreground: 0.5 0.04 50;
+
+    --border: 0.82 0.04 60;
+    --input: 0.88 0.03 70;
+    --ring: 0.78 0.12 75;
+
+    --chart-1: 0.78 0.12 75;
+    --chart-2: 0.48 0.1 145;
+    --chart-3: 0.38 0.07 42;
+    --chart-4: 0.52 0.18 28;
+    --chart-5: 0.65 0.14 60;
+
+    --sidebar: 0.95 0.022 80;
+    --sidebar-foreground: 0.22 0.04 45;
+    --sidebar-primary: 0.38 0.07 42;
+    --sidebar-primary-foreground: 0.97 0.018 85;
+    --sidebar-accent: 0.92 0.025 80;
+    --sidebar-accent-foreground: 0.22 0.04 45;
+    --sidebar-border: 0.82 0.04 60;
+    --sidebar-ring: 0.78 0.12 75;
+
+    /* Seasonal spice badge — warm saffron/turmeric */
+    --seasonal: 0.65 0.16 55;
+  }
+
+  .dark {
+    --background: 0.18 0.04 42;
+    --foreground: 0.95 0.018 85;
+
+    --card: 0.22 0.04 42;
+    --card-foreground: 0.95 0.018 85;
+
+    --popover: 0.22 0.04 42;
+    --popover-foreground: 0.95 0.018 85;
+
+    --primary: 0.78 0.12 75;
+    --primary-foreground: 0.18 0.04 42;
+
+    --secondary: 0.28 0.05 42;
+    --secondary-foreground: 0.95 0.018 85;
+
+    --accent: 0.48 0.1 145;
+    --accent-foreground: 0.95 0.018 85;
+
+    --destructive: 0.52 0.18 28;
+    --destructive-foreground: 0.95 0.018 85;
+
+    --muted: 0.28 0.04 42;
+    --muted-foreground: 0.65 0.04 60;
+
+    --border: 0.32 0.04 42;
+    --input: 0.32 0.04 42;
+    --ring: 0.78 0.12 75;
+
+    --sidebar: 0.22 0.04 42;
+    --sidebar-foreground: 0.95 0.018 85;
+    --sidebar-primary: 0.78 0.12 75;
+    --sidebar-primary-foreground: 0.18 0.04 42;
+    --sidebar-accent: 0.28 0.05 42;
+    --sidebar-accent-foreground: 0.95 0.018 85;
+    --sidebar-border: 0.32 0.04 42;
+    --sidebar-ring: 0.78 0.12 75;
+
+    --seasonal: 0.72 0.16 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-handwritten {
+    font-family: 'Kalam', cursive;
+  }
+
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* Jute texture overlay */
+  .jute-texture {
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        oklch(0.38 0.07 42 / 0.04) 2px,
+        oklch(0.38 0.07 42 / 0.04) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        oklch(0.38 0.07 42 / 0.03) 3px,
+        oklch(0.38 0.07 42 / 0.03) 6px
+      );
+  }
+
+  /* Hand-painted border motif */
+  .painted-border {
+    border: 3px solid oklch(0.78 0.12 75);
+    box-shadow: 
+      0 0 0 1px oklch(0.52 0.18 28 / 0.3),
+      inset 0 0 0 1px oklch(0.52 0.18 28 / 0.15);
+    position: relative;
+  }
+
+  .painted-border::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px dashed oklch(0.78 0.12 75 / 0.5);
+    pointer-events: none;
+    border-radius: calc(var(--radius) - 4px);
+  }
+
+  /* Seasonal product border — saffron/spice accent */
+  .painted-border-seasonal {
+    border: 3px solid oklch(var(--seasonal));
+    box-shadow: 
+      0 0 0 1px oklch(var(--seasonal) / 0.25),
+      inset 0 0 0 1px oklch(var(--seasonal) / 0.12);
+    position: relative;
+  }
+
+  .painted-border-seasonal::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px dashed oklch(var(--seasonal) / 0.45);
+    pointer-events: none;
+    border-radius: calc(var(--radius) - 4px);
+  }
+
+  /* Section heading decoration */
+  .section-heading {
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-heading::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, oklch(0.78 0.12 75), oklch(0.52 0.18 28), transparent);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+
+  /* Status badges */
+  .badge-available {
+    background-color: oklch(0.48 0.1 145);
+    color: oklch(0.97 0.018 85);
+  }
+
+  .badge-preorder {
+    background-color: oklch(0.78 0.12 75);
+    color: oklch(0.22 0.04 45);
+  }
+
+  .badge-seasonal {
+    background-color: oklch(var(--seasonal));
+    color: oklch(0.97 0.018 85);
+  }
+
+  /* WhatsApp green button */
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  }
+
+  /* Terracotta button */
+  .btn-terracotta {
+    background-color: oklch(0.52 0.18 28);
+    color: oklch(0.97 0.018 85);
+    transition: all 0.2s;
+  }
+
+  .btn-terracotta:hover {
+    background-color: oklch(0.46 0.18 28);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px oklch(0.52 0.18 28 / 0.4);
+  }
+
+  /* Turmeric button */
+  .btn-turmeric {
+    background-color: oklch(0.78 0.12 75);
+    color: oklch(0.22 0.04 45);
+    transition: all 0.2s;
+  }
+
+  .btn-turmeric:hover {
+    background-color: oklch(0.72 0.14 75);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px oklch(0.78 0.12 75 / 0.4);
+  }
+
+  /* Leaf green button */
+  .btn-leaf {
+    background-color: oklch(0.48 0.1 145);
+    color: oklch(0.97 0.018 85);
+    transition: all 0.2s;
+  }
+
+  .btn-leaf:hover {
+    background-color: oklch(0.42 0.1 145);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px oklch(0.48 0.1 145 / 0.4);
+  }
+
+  /* Decorative dot pattern */
+  .dot-pattern {
+    background-image: radial-gradient(circle, oklch(0.78 0.12 75 / 0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Seasonal color utility */
+  .text-seasonal {
+    color: oklch(var(--seasonal));
+  }
+
+  .bg-seasonal {
+    background-color: oklch(var(--seasonal));
+  }
+
+  /* Fade-in-up animation utility */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out both;
+  }
+
+  /* Staggered animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

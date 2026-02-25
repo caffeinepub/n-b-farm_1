@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T11:42:22.138Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-37",
+        "summary": "In PreOrderForm.tsx, update the Desi Mango 10 kg box variant price to ₹350 per box. Update the dynamic total price calculation so that when 'Desi Mango' is selected with '10 kg box' packaging, the price used is ₹350 per box × quantity. Update the pre-filled WhatsApp message to reflect ₹350 per box for Desi Mango 10 kg box orders. The Desi Mango 5 kg box (₹200 per box), Kesar Mango 5 kg box, and Kesar Mango 10 kg box pricing must remain unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/PreOrderForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/PreOrderForm.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/PreOrderForm.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
