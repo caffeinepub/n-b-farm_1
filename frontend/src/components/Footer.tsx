@@ -28,14 +28,10 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/assets/generated/nb-farm-logo.dim_400x400.png"
-                alt="N.B. Farm logo"
-                className="w-14 h-14 rounded-full object-cover border-2 border-turmeric"
+                src="/assets/generated/nb-farm-logo.dim_512x512.png"
+                alt="NB Farm — By Dr. Raval"
+                className="h-14 w-auto object-contain"
               />
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-offwhite">N.B. Farm</h2>
-                <p className="font-handwritten text-turmeric text-sm">Kutch, Gujarat</p>
-              </div>
             </div>
             <p className="font-handwritten text-turmeric text-xl italic mb-4 leading-relaxed">
               "Rooted in Tradition. Delivered with Purity."

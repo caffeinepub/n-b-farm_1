@@ -40,22 +40,14 @@ const Navigation: React.FC = () => {
           {/* Logo */}
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
             aria-label="N.B. Farm - Go to top"
           >
             <img
-              src="/assets/generated/nb-farm-logo.dim_400x400.png"
-              alt="N.B. Farm logo"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-turmeric shadow-xs"
+              src="/assets/generated/nb-farm-logo.dim_512x512.png"
+              alt="NB Farm — By Dr. Raval"
+              className="h-12 md:h-16 w-auto object-contain"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="font-serif font-bold text-lg md:text-xl text-mud leading-none">
-                N.B. Farm
-              </span>
-              <span className="font-handwritten text-xs text-terracotta leading-none">
-                Pure Desi Goodness
-              </span>
-            </div>
           </button>
 
           {/* Desktop Nav */}

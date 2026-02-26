@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-preorderform-tsx-update-the-desi-mango-10-kg-box-variant-price-to-350-per-box-update-the-dynamic-total-price-calculation-so-that-when-desi-mango-is-selected-with-10-kg-box-packaging-the-price-used-is-350-per-box-quantity-update-the-pre-filled-whatsapp-message-to-reflect-350-per-box-for-desi-mango-10-kg-box-orders-the-desi-mango-5-kg-box-200-per-box-kesar-mango-5-kg-box-and-kesar-mango-10-kg-box-pricing-must-remain-unchanged",
-      "featureTitle": "In PreOrderForm.tsx, update the Desi Mango 10 kg box variant price to ₹350 per box. Update the dynamic total price calculation so that when 'Desi Mango' is selected with '10 kg box' packaging, the price used is ₹350 per box × quantity. Update the pre-filled WhatsApp message to reflect ₹350 per box for Desi Mango 10 kg box orders. The Desi Mango 5 kg box (₹200 per box), Kesar Mango 5 kg box, and Kesar Mango 10 kg box pricing must remain unchanged.",
+      "featureId": "feature-in-footer-tsx-replace-the-current-n-b-farm-logo-image-in-the-bottom-left-brand-area-above-the-quick-navigation-links-section-with-the-newly-uploaded-logo-image-at-assets-generated-nb-farm-logo-png-display-it-at-an-appropriate-size-e-g-height-48-64px-consistent-with-how-the-logo-appears-in-the-navigation-bar-preserve-all-other-footer-content-and-styling-unchanged",
+      "featureTitle": "In Footer.tsx, replace the current N.B. Farm logo image in the bottom-left brand area (above the quick navigation links section) with the newly uploaded logo image at '/assets/generated/nb-farm-logo.png'. Display it at an appropriate size (e.g., height 48–64px) consistent with how the logo appears in the navigation bar. Preserve all other footer content and styling unchanged.",
       "files": [
-        "frontend/src/components/PreOrderForm.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-37"
+        "REQ-45"
       ],
       "confidence": "high"
     }

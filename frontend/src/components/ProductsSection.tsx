@@ -27,21 +27,21 @@ const lemonFeatures = [
 
 const seasonalProducts = [
   {
-    name: 'Jiru Powder',
-    gujarati: 'જીરૂ પાઉડર',
+    name: 'Pure Cleaned Jiru',
+    gujarati: 'શુદ્ધ સાફ જીરૂ',
     emoji: '🌿',
-    description: 'Pure stone-ground cumin powder from our farm',
+    description: 'Pure stone-ground cumin from our farm — cleaned and naturally processed',
     features: [
       'Stone-ground for full aroma',
       'Pure & natural, no additives',
       'Traditional Kutch recipe',
       'Rich earthy flavour'
     ],
-    whatsappMsg: 'Hello, I would like to order Jiru Powder from N.B. Farm.'
+    whatsappMsg: 'Hello, I would like to order Pure Cleaned Jiru from N.B. Farm.'
   },
   {
     name: 'Dhana Powder',
-    gujarati: 'ધાણા પાઉડર',
+    gujarati: 'ધાણા પાવડર',
     emoji: '🌾',
     description: 'Freshly ground coriander powder, farm-to-kitchen',
     features: [
@@ -54,7 +54,7 @@ const seasonalProducts = [
   },
   {
     name: 'Dhana Jiru Powder',
-    gujarati: 'ધાણા જીરૂ',
+    gujarati: 'ધાણા જીરૂ પાવડર',
     emoji: '✨',
     description: 'Classic blend of coriander & cumin — the heart of Indian cooking',
     features: [
@@ -161,7 +161,7 @@ const ProductsSection: React.FC = () => {
                   <p className="font-handwritten text-terracotta text-sm mt-0.5">Kutch's Finest</p>
                 </div>
                 <div className="text-right">
-                  <div className="font-serif text-2xl font-bold text-terracotta">₹650</div>
+                  <div className="font-serif text-2xl font-bold text-terracotta">₹700</div>
                   <div className="font-body text-xs text-muted-foreground">per 5 kg box</div>
                 </div>
               </div>
@@ -219,7 +219,7 @@ const ProductsSection: React.FC = () => {
             </div>
 
             <div className="p-6 flex flex-col flex-1">
-              <div className="flex items-start justify-between mb-3">
+              <div className="flex items-start justify-between mb-1">
                 <div>
                   <h3 className="font-serif text-2xl font-bold text-mud">Farm Fresh Lemon</h3>
                   <p className="font-handwritten text-terracotta text-sm mt-0.5">Naturally Grown in Kutch</p>
@@ -229,6 +229,11 @@ const ProductsSection: React.FC = () => {
                   <div className="font-body text-xs text-muted-foreground">per kg</div>
                 </div>
               </div>
+
+              {/* Seasonal price note */}
+              <p className="font-body text-xs text-muted-foreground italic mb-3">
+                * Prices may vary according to season &amp; availability.
+              </p>
 
               <ul className="space-y-2 mb-6 flex-1">
                 {lemonFeatures.map((f, i) => (
@@ -309,7 +314,7 @@ const ProductsSection: React.FC = () => {
 
                   <div className="mb-4 text-center">
                     <span className="font-body text-xs text-muted-foreground italic">
-                      Contact us for pricing & availability
+                      Contact us for pricing &amp; availability
                     </span>
                   </div>
 

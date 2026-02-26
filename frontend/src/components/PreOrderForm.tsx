@@ -12,7 +12,7 @@ const VARIANT_BOX_PRICES: Record<MangoVariant, Record<PackagingSize, number>> = 
     '10 kg box': 350
   },
   'Kesar Mango': {
-    '5 kg box': 600,
+    '5 kg box': 650,
     '10 kg box': 1000
   }
 };
@@ -24,7 +24,7 @@ const VARIANT_BOX_ORIGINAL_PRICES: Record<MangoVariant, Record<PackagingSize, nu
     '10 kg box': null
   },
   'Kesar Mango': {
-    '5 kg box': 650,
+    '5 kg box': 700,
     '10 kg box': null
   }
 };
@@ -210,8 +210,8 @@ const PreOrderForm: React.FC = () => {
                   <span>📦 5 kg box</span>
                   {form.mangoVariant === 'Kesar Mango' ? (
                     <span className="flex items-center gap-1.5">
-                      <span className="line-through text-xs text-muted-foreground font-normal">₹650</span>
-                      <span className="text-terracotta font-bold">₹600</span>
+                      <span className="line-through text-xs text-muted-foreground font-normal">₹700</span>
+                      <span className="text-terracotta font-bold">₹650</span>
                     </span>
                   ) : (
                     <span className="text-terracotta font-bold">₹200</span>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 27,
+  "projectStateVersion": 33,
   "summary": "Responsive farm business website for N.B. Farm with classical retro Indian rural aesthetic. Features warm earthy tones, Indian motifs (rangoli, jute textures, hand-painted borders), elegant serif/handwritten fonts. Includes hero section, about page, products (Gir A2 Milk at ₹70/L & Natural Mangoes at ₹100/kg), Why Choose Us, delivery info, Google Maps location, WhatsApp/contact integration, and footer. Mobile-friendly, SEO optimized, smooth scrolling.",
   "architectural_notes": [
     "Classical retro Indian rural aesthetic: warm earthy tones (mud brown, turmeric yellow, leaf green, terracotta, off-white), serif+handwritten fonts, rangoli/jute/hand-painted border motifs",
@@ -11,7 +11,7 @@
     "Hero section top heading ('Straight from Kutch, Gujarat' or similar) is partially cut off on page load; needs vertical offset adjustment.",
     "WhatsApp pre-order for mangoes is not working — needs to be fixed."
   ],
-  "isFixRequest": false,
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-apply-a-classical-retro-indian-rural-visual-theme-across-the-entire-site-warm-earthy-color-palette-mud-brown-6b3a2a-turmeric-yellow-e8a020-leaf-green-4a7c3f-terracotta-c1440e-off-white-faf3e0-elegant-serif-headings-paired-with-a-handwritten-style-accent-font-subtle-rangoli-inspired-decorative-dividers-jute-texture-overlays-on-section-backgrounds-and-hand-painted-border-motifs-on-cards-and-sections-the-overall-feel-should-be-premium-organic-natural-and-trustworthy",
@@ -285,6 +285,70 @@
         "REQ-37"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-productssection-tsx-update-the-natural-mangoes-product-card-price-display-to-700-5-kg-box-from-the-current-650-per-5-kg-box-or-equivalent-the-price-label-must-clearly-read-700-5-kg-box-or-700-per-5-kg-consistent-with-the-existing-card-style",
+      "title": "In ProductsSection.tsx, update the Natural Mangoes product card price display to '₹700 / 5 kg box' (from the current '₹650 per 5 kg box' or equivalent). The price label must clearly read '₹700 / 5 kg box' or '₹700 per 5 kg', consistent with the existing card style.",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-preorderform-tsx-update-the-kesar-mango-5-kg-box-price-to-650-per-box-full-price-700-pre-order-discount-50-display-the-original-price-700-struck-through-and-the-discounted-pre-order-price-650-prominently-show-the-saving-clearly-e-g-you-save-50-per-box-update-the-dynamic-total-price-calculation-so-that-when-kesar-mango-is-selected-with-5-kg-box-use-650-per-box-quantity-update-the-pre-filled-whatsapp-message-to-reflect-650-per-box-discounted-pre-order-price-for-kesar-mango-5-kg-box-orders-desi-mango-pricing-200-for-5-kg-box-350-for-10-kg-box-and-kesar-mango-10-kg-box-pricing-must-remain-unchanged",
+      "title": "In PreOrderForm.tsx, update the Kesar Mango 5 kg box price to ₹650 per box (full price ₹700, pre-order discount ₹50). Display the original price ₹700 struck through and the discounted pre-order price ₹650 prominently. Show the saving clearly (e.g., 'You save ₹50 per box!'). Update the dynamic total price calculation so that when 'Kesar Mango' is selected with '5 kg box', use ₹650 per box × quantity. Update the pre-filled WhatsApp message to reflect ₹650 per box (discounted pre-order price) for Kesar Mango 5 kg box orders. Desi Mango pricing (₹200 for 5 kg box, ₹350 for 10 kg box) and Kesar Mango 10 kg box pricing must remain unchanged.",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-productssection-tsx-in-the-seasonal-specials-subsection-rename-the-product-card-currently-labelled-jiru-powder-or-jiru-to-pure-cleaned-jiru-remove-the-word-powder-and-its-gujarati-equivalent-from-this-card-s-title-update-the-whatsapp-pre-filled-message-button-for-this-card-to-reference-pure-cleaned-jiru-instead-of-jiru-powder",
+      "title": "In ProductsSection.tsx, in the Seasonal Specials subsection, rename the product card currently labelled 'Jiru Powder' (or 'Jiru પાવડર') to 'Pure Cleaned Jiru'. Remove the word 'Powder' (and its Gujarati equivalent) from this card's title. Update the WhatsApp pre-filled message button for this card to reference 'Pure Cleaned Jiru' instead of 'Jiru Powder'.",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-productssection-tsx-in-the-seasonal-specials-subsection-update-the-dhana-jiru-powder-card-title-to-display-its-name-correctly-in-gujarati-script-as-ensure-the-gujarati-text-is-rendered-correctly-and-is-legible-with-the-existing-font-stack",
+      "title": "In ProductsSection.tsx, in the Seasonal Specials subsection, update the 'Dhana Jiru Powder' card title to display its name correctly in Gujarati script as 'ધાણા જીરૂ પાવડર'. Ensure the Gujarati text is rendered correctly and is legible with the existing font stack.",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-productssection-tsx-on-the-farm-fresh-lemon-product-card-add-a-small-subtitle-or-note-directly-beneath-the-card-title-or-price-that-reads-prices-may-vary-according-to-season-availability-style-it-as-a-small-muted-or-italic-note-consistent-with-the-earthy-card-style",
+      "title": "In ProductsSection.tsx, on the Farm Fresh Lemon product card, add a small subtitle or note directly beneath the card title or price that reads: 'Prices may vary according to season & availability.' Style it as a small muted or italic note consistent with the earthy card style.",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-productssection-tsx-audit-all-occurrences-of-the-gujarati-word-for-powder-across-the-seasonal-specials-cards-dhana-powder-dhana-jiru-powder-and-any-other-card-using-gujarati-script-and-correct-the-spelling-to-everywhere-it-appears-replace-any-misspelled-variant-e-g-incorrect-vowel-or-consonant-combinations-with-the-correctly-spelled",
+      "title": "In ProductsSection.tsx, audit all occurrences of the Gujarati word for 'Powder' across the Seasonal Specials cards (Dhana Powder, Dhana Jiru Powder, and any other card using Gujarati script) and correct the spelling to 'પાવડર' everywhere it appears. Replace any misspelled variant (e.g., incorrect vowel or consonant combinations) with the correctly spelled 'પાવડર'.",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-navigation-tsx-replace-the-current-n-b-farm-logo-image-with-the-newly-uploaded-logo-image-saved-as-assets-generated-nb-farm-logo-png-the-logo-should-be-displayed-at-an-appropriate-size-in-the-navigation-bar-e-g-height-48-64px-while-preserving-the-existing-navigation-layout-and-styling-update-any-img-src-references-to-the-old-logo-to-point-to-the-new-file",
+      "title": "In Navigation.tsx, replace the current N.B. Farm logo image with the newly uploaded logo image saved as '/assets/generated/nb-farm-logo.png'. The logo should be displayed at an appropriate size in the navigation bar (e.g., height 48–64px) while preserving the existing navigation layout and styling. Update any img src references to the old logo to point to the new file.",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-footer-tsx-replace-the-current-n-b-farm-logo-image-in-the-bottom-left-brand-area-above-the-quick-navigation-links-section-with-the-newly-uploaded-logo-image-at-assets-generated-nb-farm-logo-png-display-it-at-an-appropriate-size-e-g-height-48-64px-consistent-with-how-the-logo-appears-in-the-navigation-bar-preserve-all-other-footer-content-and-styling-unchanged",
+      "title": "In Footer.tsx, replace the current N.B. Farm logo image in the bottom-left brand area (above the quick navigation links section) with the newly uploaded logo image at '/assets/generated/nb-farm-logo.png'. Display it at an appropriate size (e.g., height 48–64px) consistent with how the logo appears in the navigation bar. Preserve all other footer content and styling unchanged.",
+      "reqIds": [
+        "REQ-45"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -451,6 +515,54 @@
     {
       "id": "AR-38",
       "summary": "In PreOrderForm.tsx, update the Desi Mango 10 kg box variant price to ₹350 per box. Update the dynamic total price calculation and the pre-filled WhatsApp message accordingly.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-39",
+      "summary": "Change mango price in Products section to ₹700 per 5kg box.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-40",
+      "summary": "In PreOrderForm.tsx, update Kesar Mango 5kg box price to ₹650 per box (₹700 full price with ₹50 pre-order discount). Show discount clearly.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-41",
+      "summary": "In Seasonal Specials, rename 'Jiru Powder' to 'Pure Cleaned Jiru' (remove 'Powder' from name).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-42",
+      "summary": "Write 'Dhana Jiru Powder' correctly in Gujarati script in the seasonal specials section.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-43",
+      "summary": "Add a small note/heading under Farm Fresh Lemon in Products section indicating prices are variable according to season and availability.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-44",
+      "summary": "Fix spelling of પાવડર (Gujarati for 'Powder') across the seasonal specials/products section wherever it appears.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-45",
+      "summary": "Replace the current N.B. Farm logo with a user-uploaded image as the site logo.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-46",
+      "summary": "In Footer.tsx, replace the current N.B. Farm logo image with the newly uploaded logo image (/assets/generated/nb-farm-logo.png) in the bottom-left area above the quick links section.",
       "reqIds": [],
       "status": "pending"
     }

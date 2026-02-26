@@ -1,23 +1,23 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update Desi Mango 10 kg box price to ₹350 in PreOrderForm",
+  "title": "Fix Footer logo to use new uploaded logo image",
   "requirements": [
     {
-      "id": "REQ-37",
-      "summary": "Update Desi Mango 10 kg box price from current value to ₹350, ensuring dynamic total price calculation and WhatsApp message reflect the new price while keeping all other variant prices unchanged",
+      "id": "REQ-45",
+      "summary": "Replace the current N.B. Farm logo image in Footer.tsx bottom-left brand area with the newly uploaded logo at '/assets/generated/nb-farm-logo.png', displaying it at an appropriate size (48–64px height) consistent with the navigation bar logo while preserving all other footer content and styling",
       "acceptanceCriteria": [
-        "When 'Desi Mango' and '10 kg box' are selected, the dynamic total price displays ₹350 × quantity.",
-        "The pre-filled WhatsApp message sent on form submission correctly states ₹350 per box for Desi Mango 10 kg box orders.",
-        "Desi Mango 5 kg box price remains ₹200 per box with no change.",
-        "Kesar Mango pricing (both 5 kg and 10 kg box) remains unchanged.",
-        "Total price calculation updates correctly in real time as quantity changes with this combination selected."
+        "The Footer displays the new logo image from '/assets/generated/nb-farm-logo.png' in the bottom-left brand area above the quick navigation links.",
+        "The old/placeholder logo image is no longer shown in the footer.",
+        "The logo renders at an appropriate size (approximately 48–64px height) without distortion.",
+        "All other footer content (tagline, address, phone numbers, email, quick links, copyright) remains unchanged.",
+        "The footer layout and earthy theme styling remain consistent."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/PreOrderForm.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update the pricing logic for Desi Mango 10 kg box variant to ₹350 per box. Locate the price calculation function or data structure that determines unit price based on mangoVariant and packagingSize. Change the Desi Mango + 10 kg box combination price from its current value to 350. Ensure the dynamic total price calculation (unitPrice × quantity) uses this new value. Update the WhatsApp message template generation to correctly format ₹350 per box for Desi Mango 10 kg box orders. Verify that Desi Mango 5 kg box remains at ₹200 and that Kesar Mango pricing for both 5 kg and 10 kg boxes remains unchanged."
+          "description": "Replace the existing logo image source in the bottom-left brand area (above the quick navigation links section) with the new logo at '/assets/generated/nb-farm-logo.dim_400x400.png'. Update the img element's src attribute to reference this workspace file path. Set the logo height to approximately 48–64px (consistent with Navigation.tsx) and ensure the aspect ratio is preserved. Keep all other footer content (N.B. Farm brand name, tagline, social links, quick navigation links, copyright) and styling unchanged."
         }
       ]
     }
