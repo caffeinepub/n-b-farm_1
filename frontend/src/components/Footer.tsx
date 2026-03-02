@@ -1,6 +1,6 @@
 import React from 'react';
 import { smoothScrollTo } from '../utils/smoothScroll';
-import { SiInstagram, SiFacebook } from 'react-icons/si';
+import { SiInstagram } from 'react-icons/si';
 import { Heart } from 'lucide-react';
 
 const quickLinks = [
@@ -43,22 +43,13 @@ const Footer: React.FC = () => {
             {/* Social */}
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/nb_farm_official?igsh=NG5hMmVjNjZuazli&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="N.B. Farm on Instagram"
                 className="w-10 h-10 rounded-full bg-offwhite/10 hover:bg-offwhite/20 flex items-center justify-center transition-colors"
               >
                 <SiInstagram className="w-4 h-4 text-offwhite" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="N.B. Farm on Facebook"
-                className="w-10 h-10 rounded-full bg-offwhite/10 hover:bg-offwhite/20 flex items-center justify-center transition-colors"
-              >
-                <SiFacebook className="w-4 h-4 text-offwhite" />
               </a>
               <a
                 href="https://wa.me/919978510084"

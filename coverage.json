@@ -1,24 +1,46 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T07:53:55.468Z",
+  "generatedAt": "2026-03-02T08:59:59.932Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 3,
+    "implemented": 3,
     "items": [
       {
-        "id": "REQ-45",
-        "summary": "In Footer.tsx, replace the current N.B. Farm logo image in the bottom-left brand area (above the quick navigation links section) with the newly uploaded logo image at '/assets/generated/nb-farm-logo.png'. Display it at an appropriate size (e.g., height 48–64px) consistent with how the logo appears in the navigation bar. Preserve all other footer content and styling unchanged.",
+        "id": "REQ-1",
+        "summary": "In the FarmGallerySection, replace the existing 'fresh lemon tree' gallery image with the uploaded photo IMG_8398-1.jpeg and update its label/caption to 'Lemon Trees'.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/FarmGallerySection.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/FarmGallerySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "In the FarmGallerySection, replace the existing farm granary gallery image with the uploaded photo IMG_8399-1.jpeg (flowering mango trees at sunset) and update its label/caption to 'Flowering Mangoes'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FarmGallerySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FarmGallerySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "In the FarmGallerySection, replace the existing farm entrance gallery image with the uploaded photo IMG_8402-1.jpeg (palm tree lined farm path) and update its label/caption to 'Farm Greenery'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FarmGallerySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FarmGallerySection.tsx"
         ]
       }
     ]
@@ -28,7 +50,10 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/Footer.tsx",
+    "frontend/public/assets/generated/farm-greenery.dim_1200x800.jpg",
+    "frontend/public/assets/generated/flowering-mangoes.dim_1200x800.jpg",
+    "frontend/public/assets/generated/lemon-trees.dim_1200x800.jpg",
+    "frontend/src/components/FarmGallerySection.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

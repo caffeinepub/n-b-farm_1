@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, Send, Loader2 } from 'lucide-react';
-import { SiInstagram, SiFacebook } from 'react-icons/si';
+import { SiInstagram } from 'react-icons/si';
 
 interface ContactForm {
   name: string;
@@ -120,22 +120,13 @@ const ContactSection: React.FC = () => {
               <p className="font-body text-xs text-muted-foreground uppercase tracking-wide mb-3">Follow Us</p>
               <div className="flex gap-3">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/nb_farm_official?igsh=NG5hMmVjNjZuazli&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow N.B. Farm on Instagram"
                   className="w-12 h-12 rounded-full bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#dc2743] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-xs"
                 >
                   <SiInstagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Follow N.B. Farm on Facebook"
-                  className="w-12 h-12 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-xs"
-                >
-                  <SiFacebook className="w-5 h-5" />
                 </a>
               </div>
             </div>

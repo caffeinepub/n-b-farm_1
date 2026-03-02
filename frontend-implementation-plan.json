@@ -1,23 +1,53 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix Footer logo to use new uploaded logo image",
+  "title": "Replace farm gallery images with real farm photos",
   "requirements": [
     {
-      "id": "REQ-45",
-      "summary": "Replace the current N.B. Farm logo image in Footer.tsx bottom-left brand area with the newly uploaded logo at '/assets/generated/nb-farm-logo.png', displaying it at an appropriate size (48–64px height) consistent with the navigation bar logo while preserving all other footer content and styling",
+      "id": "REQ-1",
+      "summary": "Replace the 'fresh lemon tree' gallery image with IMG_8398-1.jpeg and update its label to 'Lemon Trees'",
       "acceptanceCriteria": [
-        "The Footer displays the new logo image from '/assets/generated/nb-farm-logo.png' in the bottom-left brand area above the quick navigation links.",
-        "The old/placeholder logo image is no longer shown in the footer.",
-        "The logo renders at an appropriate size (approximately 48–64px height) without distortion.",
-        "All other footer content (tagline, address, phone numbers, email, quick links, copyright) remains unchanged.",
-        "The footer layout and earthy theme styling remain consistent."
+        "The gallery slot previously showing the 'fresh lemon tree' image now displays IMG_8398-1.jpeg",
+        "The label/caption for this gallery item reads 'Lemon Trees'",
+        "The image renders correctly in the gallery grid and lightbox modal"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/src/components/FarmGallerySection.tsx",
           "operation": "modify",
-          "description": "Replace the existing logo image source in the bottom-left brand area (above the quick navigation links section) with the new logo at '/assets/generated/nb-farm-logo.dim_400x400.png'. Update the img element's src attribute to reference this workspace file path. Set the logo height to approximately 48–64px (consistent with Navigation.tsx) and ensure the aspect ratio is preserved. Keep all other footer content (N.B. Farm brand name, tagline, social links, quick navigation links, copyright) and styling unchanged."
+          "description": "Update the gallery data array to replace the 'fresh lemon tree' image source with 'frontend/public/assets/generated/lemon-trees.dim_1200x800.jpg' and change its title/label to 'Lemon Trees'. Ensure the image path is correctly referenced for both the thumbnail grid and the lightbox modal."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Replace the farm granary gallery image with IMG_8399-1.jpeg (flowering mango trees at sunset) and update its label to 'Flowering Mangoes'",
+      "acceptanceCriteria": [
+        "The gallery slot previously showing the farm granary image now displays IMG_8399-1.jpeg",
+        "The label/caption for this gallery item reads 'Flowering Mangoes'",
+        "The image renders correctly in the gallery grid and lightbox modal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FarmGallerySection.tsx",
+          "operation": "modify",
+          "description": "Update the gallery data array to replace the farm granary image source with 'frontend/public/assets/generated/flowering-mangoes.dim_1200x800.jpg' and change its title/label to 'Flowering Mangoes'. Ensure the image path is correctly referenced for both the thumbnail grid and the lightbox modal."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Replace the farm entrance gallery image with IMG_8402-1.jpeg (palm tree lined farm path) and update its label to 'Farm Greenery'",
+      "acceptanceCriteria": [
+        "The gallery slot previously showing the farm entrance image now displays IMG_8402-1.jpeg",
+        "The label/caption for this gallery item reads 'Farm Greenery'",
+        "The image renders correctly in the gallery grid and lightbox modal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FarmGallerySection.tsx",
+          "operation": "modify",
+          "description": "Update the gallery data array to replace the farm entrance image source with 'frontend/public/assets/generated/farm-greenery.dim_1200x800.jpg' and change its title/label to 'Farm Greenery'. Ensure the image path is correctly referenced for both the thumbnail grid and the lightbox modal."
         }
       ]
     }

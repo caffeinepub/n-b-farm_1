@@ -1,42 +1,87 @@
 {
   "kind": "build_request",
-  "title": "Fix Footer logo to use new uploaded logo image",
-  "projectName": "N.B. Farm",
+  "title": "Replace farm gallery images with real farm photos",
+  "projectName": "NB Farm",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-45",
-      "text": "In Footer.tsx, replace the current N.B. Farm logo image in the bottom-left brand area (above the quick navigation links section) with the newly uploaded logo image at '/assets/generated/nb-farm-logo.png'. Display it at an appropriate size (e.g., height 48–64px) consistent with how the logo appears in the navigation bar. Preserve all other footer content and styling unchanged.",
+      "id": "REQ-1",
+      "text": "In the FarmGallerySection, replace the existing 'fresh lemon tree' gallery image with the uploaded photo IMG_8398-1.jpeg and update its label/caption to 'Lemon Trees'.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-10",
+          "msg-12",
+          "msg-16"
         ],
         "quotes": [
-          "the logo at the bottom most on the left side of N.B. Farm is still unchaged above the quick links section please correct it to the new one i uploaded"
+          "replace the fresh lemon tree image with IMG_8398 and name them Lemon Trees",
+          "IMG_8398 → replaces the 'fresh lemon tree' image, labeled 'Lemon Trees'"
         ]
       },
       "acceptanceCriteria": [
-        "The Footer displays the new logo image from '/assets/generated/nb-farm-logo.png' in the bottom-left brand area above the quick navigation links.",
-        "The old/placeholder logo image is no longer shown in the footer.",
-        "The logo renders at an appropriate size (approximately 48–64px height) without distortion.",
-        "All other footer content (tagline, address, phone numbers, email, quick links, copyright) remains unchanged.",
-        "The footer layout and earthy theme styling remain consistent."
+        "The gallery slot previously showing the 'fresh lemon tree' image now displays IMG_8398-1.jpeg",
+        "The label/caption for this gallery item reads 'Lemon Trees'",
+        "The image renders correctly in the gallery grid and lightbox modal"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "In the FarmGallerySection, replace the existing farm granary gallery image with the uploaded photo IMG_8399-1.jpeg (flowering mango trees at sunset) and update its label/caption to 'Flowering Mangoes'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-14",
+          "msg-16"
+        ],
+        "quotes": [
+          "name 8399 as flowering mangoes",
+          "IMG_8399 → replaces the farm granary image, labeled 'Flowering Mangoes'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The gallery slot previously showing the farm granary image now displays IMG_8399-1.jpeg",
+        "The label/caption for this gallery item reads 'Flowering Mangoes'",
+        "The image renders correctly in the gallery grid and lightbox modal"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "In the FarmGallerySection, replace the existing farm entrance gallery image with the uploaded photo IMG_8402-1.jpeg (palm tree lined farm path) and update its label/caption to 'Farm Greenery'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-14",
+          "msg-16"
+        ],
+        "quotes": [
+          "8402 as farm grennary",
+          "IMG_8402 → replaces the farm entrance image, labeled 'Farm Greenery'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The gallery slot previously showing the farm entrance image now displays IMG_8402-1.jpeg",
+        "The label/caption for this gallery item reads 'Farm Greenery'",
+        "The image renders correctly in the gallery grid and lightbox modal"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files listed in frontend.immutablePaths.",
-    "Do not alter any other section or component outside of Footer.tsx.",
-    "Use '/assets/generated/nb-farm-logo.png' as the exact image path."
+    "Do not change any other gallery images or sections beyond the three specified slots",
+    "Do not modify backend logic or data models",
+    "Use the uploaded user photos as static assets; do not route them through the backend"
   ],
   "nonGoals": [
-    "Changing the logo in Navigation.tsx (already completed in a previous version).",
-    "Adding PhonePe or any payment gateway integration.",
-    "Modifying any other section of the website."
+    "Redesigning the gallery layout or lightbox behavior",
+    "Adding new gallery slots beyond the three replacements",
+    "Changing any other section of the website"
   ],
   "imageRequirements": {
     "required": [],
-    "edits": []
+    "edits": [
+      "Crop and optimize for web gallery display (IMG_8398-1.jpeg > lemon-trees.dim_1200x800.jpg)",
+      "Crop and optimize for web gallery display (IMG_8399-1.jpeg > flowering-mangoes.dim_1200x800.jpg)",
+      "Crop and optimize for web gallery display (IMG_8402-1.jpeg > farm-greenery.dim_1200x800.jpg)"
+    ]
   }
 }

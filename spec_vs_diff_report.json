@@ -1,23 +1,14 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T07:53:55.464Z",
-  "summary": "REQ-45 requires the Footer.tsx to use '/assets/generated/nb-farm-logo.png' as the exact image path. The diff shows Footer.tsx was modified, but the image src used is '/assets/generated/nb-farm-logo.dim_512x512.png' instead of the required '/assets/generated/nb-farm-logo.png'. All other aspects of the requirement appear to be met: the logo is in the brand area, sized at h-14 (approximately 56px, within the 48–64px range), and other footer content appears preserved.",
-  "missing_requirements": [
-    {
-      "id": "REQ-45",
-      "requirement": "Use '/assets/generated/nb-farm-logo.png' as the exact image path in Footer.tsx.",
-      "reason": "The diff shows the img src is set to '/assets/generated/nb-farm-logo.dim_512x512.png' instead of the required exact path '/assets/generated/nb-farm-logo.png' as specified in the build request constraints.",
-      "evidence": [
-        "frontend/src/components/Footer.tsx"
-      ]
-    }
-  ],
+  "generatedAt": "2026-03-02T08:59:59.929Z",
+  "summary": "All three requirements are implemented in the diff. The FarmGallerySection.tsx now references the correct optimized image assets (lemon-trees.dim_1200x800.jpg, flowering-mangoes.dim_1200x800.jpg, farm-greenery.dim_1200x800.jpg) with the correct captions ('Lemon Trees', 'Flowering Mangoes', 'Farm Greenery'). The images are used as static frontend assets, consistent with constraints. No hallucinated features were detected.",
+  "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.92,
+  "confidence": 0.95,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/FarmGallerySection.tsx",
     "project_state.json"
   ]
 }

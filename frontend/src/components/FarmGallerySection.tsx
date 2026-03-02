@@ -9,10 +9,10 @@ const galleryImages = [
     emoji: '🥭'
   },
   {
-    src: '/assets/generated/farm-gallery-2.dim_800x1200.jpg',
-    alt: 'Farm entrance with tall trees and a dirt path leading into the green farm',
-    caption: 'Farm Entrance',
-    emoji: '🌿'
+    src: '/assets/generated/flowering-mangoes.dim_1200x800.jpg',
+    alt: 'Flowering mango trees at golden sunset hour at N.B. Farm, Kutch',
+    caption: 'Flowering Mangoes',
+    emoji: '🌸'
   },
   {
     src: '/assets/generated/farm-gallery-3.dim_800x1200.jpg',
@@ -21,8 +21,8 @@ const galleryImages = [
     emoji: '🐄'
   },
   {
-    src: '/assets/generated/farm-gallery-4.dim_800x1200.jpg',
-    alt: 'Tall coconut palm tree against a bright blue sky at N.B. Farm',
+    src: '/assets/generated/farm-greenery.dim_1200x800.jpg',
+    alt: 'Palm tree lined farm path with lush greenery at N.B. Farm, Kutch',
     caption: 'Farm Greenery',
     emoji: '🌴'
   },
@@ -57,9 +57,9 @@ const galleryImages = [
     emoji: '🥭'
   },
   {
-    src: '/assets/image.png',
-    alt: 'Fresh lemons hanging on the lemon tree at N.B. Farm',
-    caption: 'Fresh Lemon Tree',
+    src: '/assets/generated/lemon-trees.dim_1200x800.jpg',
+    alt: 'Fresh lemon trees in the citrus orchard at N.B. Farm, Kutch',
+    caption: 'Lemon Trees',
     emoji: '🍋'
   }
 ];
